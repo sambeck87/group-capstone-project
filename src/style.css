@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  font-size: 1.4vw;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#logo {
+  background-image: url('./img/Pokemon-Logo.png');
+  background-size:contain;
+  width: 4vw;
+  height: 4vw;
+  margin: 0 70px 0 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  font-weight: 600;
+  font-size: 1vw;
+  border: 1px solid black;
+  width: 99%;
+}
+
+footer p {
+  margin-left: 15px;
+}
