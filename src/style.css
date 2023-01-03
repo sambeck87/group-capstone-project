@@ -9,7 +9,7 @@ header {
 
 #logo {
   background-image: url('./img/Pokemon-Logo.png');
-  background-size:contain;
+  background-size: contain;
   width: 4vw;
   height: 4vw;
   margin: 0 70px 0 20px;
@@ -28,11 +28,11 @@ footer p {
   margin-left: 15px;
 }
 
-/*--------------------------
+/* --------------------------
 ----POPUP--------------------
---------------------------*/
+-------------------------- */
 
-.popup-container{
+.popup-container {
   background-color: #fff;
   position: fixed;
   top: 50px;
@@ -45,46 +45,48 @@ footer p {
   gap: 20px;
   padding-left: 30px;
   padding-right: 40px;
-  overflow-y:hidden;
+  overflow-y: hidden;
   box-shadow: 10px 10px 10px #d3d3d3;
 }
 
-.card-img{
+.card-img {
   align-self: center;
   margin-top: 10px;
 }
 
-.card-name{
+.card-name {
   font-family: 'Playfair Display', 'Helvetica', 'Arial', sans-serif;
   font-size: 35px;
   margin: 0;
 }
 
-ul{
+ul {
   padding: 0;
 }
 
-.card-items{
+.card-items {
   margin-top: 0;
   margin-bottom: 0;
 }
-.item{
+
+.item {
   display: flex;
   justify-content: space-between;
   font-family: 'Poppins', 'Helvet', 'Arial', sans-serif;
 }
 
-.comments-title{
+.comments-title {
   margin: 0;
   font-family: 'Poppins', 'Helvet', 'Arial', sans-serif;
   font-size: 17px;
 }
 
-.my-form{
+.my-form {
   display: flex;
   flex-direction: column;
 }
-.comments{
+
+.comments {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -93,14 +95,14 @@ ul{
   margin-bottom: 0;
 }
 
-.comment{
+.comment {
   list-style: none;
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: 10px 10px 10px #d3d3d3;
 }
 
-.closing-button{
+.closing-button {
   position: absolute;
   right: 0;
   margin-top: 20px;
@@ -110,7 +112,7 @@ ul{
   cursor: pointer;
 }
 
-.closing-button-x{
+.closing-button-x {
   width: 30px;
   height: 30px;
 }
