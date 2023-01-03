@@ -1,4 +1,4 @@
 import './style.css';
-import Display from './retrieve';
+import Display from './retrieve.js';
 
 Display();

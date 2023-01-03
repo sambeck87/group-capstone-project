@@ -14,7 +14,7 @@ header {
 
 #logo {
   background-image: url('./img/Pokemon-Logo.png');
-  background-size:contain;
+  background-size: contain;
   width: 4vw;
   height: 4vw;
   margin: 0 70px 0 20px;
@@ -84,7 +84,6 @@ footer {
 footer p {
   margin-left: 15px;
 }
-
 
 @media screen and (max-width: 768px) {
   body {
