@@ -65,6 +65,10 @@ header {
   background-color: transparent;
 }
 
+.like:active {
+  background-image: url('./img/bxs-heart.svg');
+}
+
 .comments {
   font-size: 1.3vw;
   padding: 0 0.5vw 0 0.5vw;

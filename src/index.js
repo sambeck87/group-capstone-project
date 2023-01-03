@@ -1,4 +1,5 @@
 import './style.css';
 import Display from './retrieve.js';
 
-Display();
+// const likes = document.getElementById('pidgey');
+// console.log(likes);
