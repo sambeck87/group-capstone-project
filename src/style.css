@@ -1,3 +1,8 @@
+body {
+  background-image: url('./img/background.jpg');
+  background-size: cover;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -9,10 +14,61 @@ header {
 
 #logo {
   background-image: url('./img/Pokemon-Logo.png');
-  background-size:contain;
+  background-size: contain;
   width: 4vw;
   height: 4vw;
   margin: 0 70px 0 20px;
+}
+
+#pokemonCards {
+  margin: 50px 20px 0 20px;
+  width: 96%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-bottom: 3vw;
+}
+
+.pokemonImg {
+  height: 9vw;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-top: 1vw;
+}
+
+.likes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.like {
+  background-image: url('./img/bx-heart.svg');
+  background-size: 2vw;
+  width: 2.1vw;
+  height: 2.2vw;
+  border: none;
+  background-color: transparent;
+}
+
+.comments {
+  font-size: 1.3vw;
+  padding: 0 0.5vw 0 0.5vw;
+  margin-top: 1vw;
 }
 
 footer {
@@ -20,10 +76,60 @@ footer {
   bottom: 5px;
   font-weight: 600;
   font-size: 1vw;
+  color: rgb(255, 222, 123);
   border: 1px solid black;
   width: 99%;
 }
 
 footer p {
   margin-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: contain;
+  }
+
+  header {
+    font-size: 3.4vw;
+    justify-content: center;
+  }
+
+  #logo {
+    width: 10vw;
+    height: 10vw;
+    margin: 0 70px 0 20px;
+  }
+
+  .cards {
+    width: 100%;
+    margin: 3vw 0 3vw 0;
+  }
+
+  .features {
+    font-size: 3.5vw;
+    font-weight: 600;
+    margin-top: 1vw;
+  }
+
+  .pokemonImg {
+    height: 28vw;
+  }
+
+  .like {
+    background-size: 4vw;
+    width: 4.2vw;
+    height: 4.2vw;
+  }
+
+  .comments {
+    font-size: 2.7vw;
+    padding: 0 0.5vw 0 0.5vw;
+    margin-top: 1vw;
+  }
+
+  footer {
+    position: relative;
+    font-size: 3vw;
+  }
 }
