@@ -46,6 +46,7 @@ footer p {
   padding-left: 30px;
   padding-right: 40px;
   overflow-y:hidden;
+  box-shadow: 10px 10px 10px #d3d3d3;
 }
 
 .card-img{
@@ -77,6 +78,11 @@ ul{
   margin: 0;
   font-family: 'Poppins', 'Helvet', 'Arial', sans-serif;
   font-size: 17px;
+}
+
+.my-form{
+  display: flex;
+  flex-direction: column;
 }
 .comments{
   display: flex;
