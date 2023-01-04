@@ -1,8 +1,8 @@
 import { likesCounter, addLikes } from './likesCounter.js';
 import dislayPopup from './display.js';
+import cardsCounter from './cardsCounter.js';
 
 const pokemonAPI = 'https://pokeapi.co/api/v2/pokemon/';
-const pokemons = ['bulbasaur', 'charmander', 'squirtle', 'caterpie', 'weedle', 'pidgey'];
 let toDisplay = '';
 
 const Display = async (pokeUrl) => {
@@ -27,9 +27,14 @@ const Display = async (pokeUrl) => {
   addLikes();
   dislayPopup();
 };
-pokemons.forEach((element) => {
+
+const poke = (pokemons) => {
+  pokemons.forEach((element) => {
   const finalUrl = `${pokemonAPI}${element}`;
   Display(finalUrl);
 });
+}
 
+export { poke }
 export default Display;
+
