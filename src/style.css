@@ -89,6 +89,97 @@ footer p {
   margin-left: 15px;
 }
 
+/* --------------------------
+----POPUP--------------------
+-------------------------- */
+
+.popup-container {
+  background-color: #fff;
+  color: #000;
+  position: fixed;
+  top: 50px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  overflow-y: scroll;
+  box-shadow: 10px 10px 10px #d3d3d3;
+}
+
+.card-img {
+  align-self: center;
+  margin-top: 10px;
+}
+
+.card-name {
+  font-family: 'Playfair Display', 'Helvetica', 'Arial', sans-serif;
+  font-size: 35px;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.card-items {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', 'Helvet', 'Arial', sans-serif;
+}
+
+.comments-title {
+  margin: 0;
+  font-family: 'Poppins', 'Helvet', 'Arial', sans-serif;
+  font-size: 17px;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: 'Poppins', 'Helvet', 'Arial', sans-serif;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.comment {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 10px 2px 10px #858484;
+}
+
+.closing-button {
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.closing-button-x {
+  width: 30px;
+  height: 30px;
+}
+
+
 @media screen and (max-width: 768px) {
   body {
     background-size: contain;
