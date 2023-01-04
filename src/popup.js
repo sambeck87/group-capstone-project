@@ -1,19 +1,18 @@
-const pokemonAPI = 'https://pokeapi.co/api/v2/pokemon/ditto';
 const popupCont = document.querySelector('.popups-container');
-const demoButton = document.querySelector('.demo-button');
 const closePopup = () => {
   popupCont.style.display = 'none';
 };
-const getData = async () => {
-  try {
-    const result = await fetch(pokemonAPI);
-    const data = await result.json();
-    return (data);
-  } catch (error) {
-    return error;
-  }
-};
-const popupWindow = async () => {
+const popupWindow = async (pokemon) => {
+  const pokemonAPI = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+  const getData = async () => {
+    try {
+      const result = await fetch(pokemonAPI);
+      const data = await result.json();
+      return (data);
+    } catch (error) {
+      return error;
+    }
+  };
   const data = await getData();
   let popupGenerator = '';
   popupGenerator = `
@@ -30,7 +29,7 @@ const popupWindow = async () => {
           <input id="add-comment-box" type="text" class="add-comment-box" placeholder="Add a comment">
           <button class="add-comment-button" type="submit">Add</button>
           </form>
-          <ul class="comments">
+          <ul class="comments-cont">
             <li class="comment"><span class="comment-content">How lovely</span></li>
             <li class="comment"><span class="comment-content">That's smart</span></li>
           </ul>
@@ -41,7 +40,5 @@ const popupWindow = async () => {
   const closingButton = document.getElementById('closing-button');
   closingButton.addEventListener('click', closePopup);
 };
-
-demoButton.addEventListener('click', popupWindow);
 
 export default popupWindow;

@@ -1,2 +1,4 @@
 import './style.css';
-import './popup.js';
+import Display from './retrieve.js';
+
+Display();
