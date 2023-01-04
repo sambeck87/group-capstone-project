@@ -25,7 +25,6 @@ const Display = async (pokeUrl) => {
 
   likesCounter();
   addLikes();
-  return 0;
 };
 
 pokemons.forEach((element) => {
