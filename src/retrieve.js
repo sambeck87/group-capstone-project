@@ -1,20 +1,8 @@
+import { likesCounter, addLikes } from './likesCounter.js';
+
 const pokemonAPI = 'https://pokeapi.co/api/v2/pokemon/';
 const pokemons = ['bulbasaur', 'charmander', 'squirtle', 'caterpie', 'weedle', 'pidgey'];
 let toDisplay = '';
-
-const likesConter = async () => {
-  let poke;
-  await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/VO75gGUDh9DCGbQH7oFL/likes')
-    .then((response) => response.json())
-    // eslint-disable-next-line
-    .then(json => poke = json);
-  for (let index = 0; index < poke.length; index += 1) {
-    const likes = document.getElementById(poke[index].item_id);
-    if (likes) {
-      likes.innerHTML = `${poke[index].likes} likes`;
-    }
-  }
-};
 
 const Display = async (pokeUrl) => {
   let pokemon;
@@ -32,24 +20,8 @@ const Display = async (pokeUrl) => {
   const cards = document.getElementById('pokemonCards');
   cards.innerHTML = `${toDisplay}`;
 
-  const likeBtn = document.querySelectorAll('.like');
-  likeBtn.forEach((element) => {
-    const idName = element.value;
-    element.addEventListener('click', async () => {
-      await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/VO75gGUDh9DCGbQH7oFL/likes', {
-        method: 'POST',
-        body: JSON.stringify({
-          item_id: idName,
-        }),
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
-      });
-      likesConter();
-    });
-  });
-
-  likesConter();
+  likesCounter();
+  addLikes();
   return 0;
 };
 
