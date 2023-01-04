@@ -6,6 +6,9 @@ let toDisplay = '';
 
 const Display = async (pokeUrl) => {
   let pokemon;
+  if (!pokeUrl) {
+    return;
+  }
   await fetch(pokeUrl)
     .then((response) => response.json())
     // eslint-disable-next-line
