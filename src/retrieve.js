@@ -25,16 +25,16 @@ const Display = async (pokeUrl) => {
 
   likesCounter();
   addLikes();
+  cardsCounter();
   dislayPopup();
 };
 
 const poke = (pokemons) => {
   pokemons.forEach((element) => {
-  const finalUrl = `${pokemonAPI}${element}`;
-  Display(finalUrl);
-});
-}
+    const finalUrl = `${pokemonAPI}${element}`;
+    Display(finalUrl);
+  });
+};
 
-export { poke }
+export { poke };
 export default Display;
-
