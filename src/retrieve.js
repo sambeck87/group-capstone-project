@@ -20,7 +20,7 @@ const Display = async (pokeUrl) => {
       <div class="features"><span>${pokemon.name}</span><div class="likes"><button type="button" class="like" value="${pokemon.name}"></button><span id="${pokemon.name}">likes</span></div></div>
       <button class="comments" value="${pokemon.name}">Comments</button>
       </div>`;
-      const cards = document.getElementById('pokemonCards');
+  const cards = document.getElementById('pokemonCards');
   cards.innerHTML = `${toDisplay}`;
 
   likesCounter();

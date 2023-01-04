@@ -3,8 +3,8 @@ const closePopup = () => {
   popupCont.style.display = 'none';
 };
 const popupWindow = async (pokemon) => {
-const pokemonAPI = 'https://pokeapi.co/api/v2/pokemon/'+pokemon;
-const getData = async () => {
+  const pokemonAPI = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+  const getData = async () => {
     try {
       const result = await fetch(pokemonAPI);
       const data = await result.json();
@@ -29,7 +29,7 @@ const getData = async () => {
           <input id="add-comment-box" type="text" class="add-comment-box" placeholder="Add a comment">
           <button class="add-comment-button" type="submit">Add</button>
           </form>
-          <ul class="comments">
+          <ul class="comments-cont">
             <li class="comment"><span class="comment-content">How lovely</span></li>
             <li class="comment"><span class="comment-content">That's smart</span></li>
           </ul>

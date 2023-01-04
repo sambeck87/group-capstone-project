@@ -148,7 +148,7 @@ ul {
   flex-direction: column;
 }
 
-.comments {
+.comments-cont {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -178,7 +178,6 @@ ul {
   width: 30px;
   height: 30px;
 }
-
 
 @media screen and (max-width: 768px) {
   body {
