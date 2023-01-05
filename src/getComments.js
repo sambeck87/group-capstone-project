@@ -1,4 +1,4 @@
-import commentCounter from "./commentCounter.js";
+import commentCounter from './commentCounter.js';
 
 const getData = async (pokemonAPI) => {
   try {
@@ -16,9 +16,9 @@ const getComments = async (pokemon) => {
   const counter = document.querySelector('.comments-title');
   const pokemonAPI = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/VO75gGUDh9DCGbQH7oFL/comments?item_id=${pokemon}`;
   const data = await getData(pokemonAPI);
-  const commentscount=commentCounter(data);
+  const commentscount = commentCounter(data);
   let popupGenerator = '';
-  let counterGenerator = `Comments (${commentscount})`;
+  const counterGenerator = `Comments (${commentscount})`;
   data.forEach((user) => {
     popupGenerator += `
     <li class="comment">${user.username}: <span class="comment-content">${user.comment}</span></li>`;
