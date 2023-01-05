@@ -49,7 +49,6 @@ const popupWindow = async (pokemon) => {
     const comment = document.getElementById('add-comment-box').value;
     const Idname = document.getElementById('add-comment-button').value;
     addComment(Idname, user, comment);
-    getComments(pokemon);
     myForm.reset();
   });
 };
