@@ -1,6 +1,8 @@
 body {
   background-image: url('./img/background.jpg');
   background-size: cover;
+  padding: 0;
+  margin: 0;
 }
 
 header {
@@ -14,15 +16,17 @@ header {
   font-size: 1.4vw;
   align-items: center;
   padding-top: 5px;
-  background-color: #fff;
+  background-color: #184d47;
+  color: #45beac;
+  font-family: 'Playfair display', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 #logo {
   background-image: url('./img/Pokemon-Logo.png');
   background-size: contain;
-  width: 4vw;
-  height: 4vw;
-  margin: 0 70px 0 20px;
+  width: 45px;
+  height: 45px;
+  margin: 0 20px 0 20px;
 }
 
 #pokemonCards {
@@ -40,6 +44,11 @@ header {
   align-items: center;
   width: 30%;
   margin-bottom: 6vw;
+  background-color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
 }
 
 .pokemonImg {
@@ -76,19 +85,27 @@ header {
 }
 
 .comments {
-  font-size: 1.3vw;
-  padding: 0 0.5vw 0 0.5vw;
+  padding: 5px;
   margin-top: 1vw;
+  font-size: 15px;
+  background-color: #184d47;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.comments:hover {
+  background-color: #0c2c2c;
 }
 
 footer {
-  position: fixed;
-  bottom: 5px;
   font-weight: 600;
   font-size: 1vw;
-  color: rgb(255, 222, 123);
+  margin: 0;
+  color: rgb(255, 255, 255);
+  background-color: #000;
   border: 1px solid black;
-  width: 99%;
 }
 
 footer p {
@@ -114,8 +131,12 @@ footer p {
   padding-left: 30px;
   padding-right: 40px;
   overflow-y: scroll;
-  box-shadow: 10px 10px 10px #d3d3d3;
+  box-shadow: 10px 10px 10px #444;
   z-index: 2;
+}
+
+.popup-container::-webkit-scrollbar {
+  display: none;
 }
 
 .card-img {
