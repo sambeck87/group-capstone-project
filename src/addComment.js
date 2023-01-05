@@ -1,4 +1,5 @@
-import getComments from "./getComments";
+import getComments from './getComments.js';
+
 const addComment = async (itemID, user, comment) => {
   try {
     const result = await fetch(
