@@ -33,7 +33,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome books] <a name="about-project"></a>
+# 📖 Pokedesk project <a name="about-project"></a>
 
 
 **This first group capstone** is a project where we use the pokemon API to take 6 specific elements, showing in the main page the name of the pokemon and its image.
