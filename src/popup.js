@@ -1,5 +1,6 @@
-import addComment from "./addComment.js";
-import getComments from "./getComments.js";
+import addComment from './addComment.js';
+import getComments from './getComments.js';
+
 const popupCont = document.querySelector('.popups-container');
 const closePopup = () => {
   popupCont.style.display = 'none';
@@ -42,15 +43,15 @@ const popupWindow = async (pokemon) => {
   const closingButton = document.getElementById('closing-button');
   closingButton.addEventListener('click', closePopup);
   const myForm = document.getElementById('my-form');
-myForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const user = document.getElementById('add-user-box').value;
-  const comment = document.getElementById('add-comment-box').value;
-  const Idname = document.getElementById('add-comment-button').value;
-  addComment(Idname, user, comment);
-  getComments(pokemon);
-  myForm.reset();
-});
+  myForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const user = document.getElementById('add-user-box').value;
+    const comment = document.getElementById('add-comment-box').value;
+    const Idname = document.getElementById('add-comment-button').value;
+    addComment(Idname, user, comment);
+    getComments(pokemon);
+    myForm.reset();
+  });
 };
 
 export default popupWindow;

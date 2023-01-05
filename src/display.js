@@ -1,5 +1,4 @@
 import popupWindow from './popup.js';
-import getComments from './getComments.js';
 
 const dislayPopup = () => {
   const btn = document.querySelectorAll('.comments');
