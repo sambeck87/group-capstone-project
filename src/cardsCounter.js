@@ -1,12 +1,11 @@
 const cardsCounter = () => {
   const cards = document.querySelectorAll('.cards');
-  const numberDisplay = document.getElementById('numberCards');
-  numberDisplay.innerHTML = `${cards.length} Pokemon Cards`;
   return cards.length;
 };
 
 setTimeout(() => {
-  cardsCounter();
+  const numberDisplay = document.getElementById('numberCards');
+  numberDisplay.innerHTML = `${cardsCounter()} Pokemon Cards`;
 }, 2000);
 
 module.exports = cardsCounter;

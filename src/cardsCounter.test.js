@@ -1,16 +1,36 @@
-const cardsCounter = require('./cardsCouter,js');
+/*
+* @jest-environment jsdom
+*/
 
-//Arrange
-const message = {
-  addIncorrect: 'The add is incorrect',
+const cardsCounter = require('./cardsCounter.js');
+
+// Arrange
+let toDisplay = '';
+const pokemon = [{
+  name: 'charizard',
+},
+{
+  name: 'bulbasaur',
+},
+{
+  name: 'ditto',
+},
+{
+  name: 'charmander',
+}];
+for (let i = 0; i < pokemon.length; i += 1) {
+  toDisplay += `<div class="cards">
+      <div class="features"><span>${pokemon[i].name}</span><div class="likes"><button type="button" class="like" value="${pokemon[i].name}"></button><span id="${pokemon[i].name}">likes</span></div></div>
+      <button class="comments" value="${pokemon[i].name}">Comments</button>
+      </div>`;
 }
+document.body.innerHTML = toDisplay;
 
-const calculate = cardsCounter();
+// Act
+const num = cardsCounter();
 
-//Act
+// Assert
 
-//Assert
-
-    test(message.addIncorrect, () => {
-      expect(calculate).toBe(6)
-    });
+test('example', () => {
+  expect(num).toBe(4);
+});
