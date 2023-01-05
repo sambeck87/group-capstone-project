@@ -16,7 +16,7 @@ const Display = async (pokeUrl) => {
     .then((json) => pokemon = json);
 
   toDisplay += `<div class="cards">
-      <img class="pokemonImg" src="${pokemon.sprites.other.dream_world.front_default}" alt="">
+      <img class="pokemonImg" src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}">
       <div class="features"><span>${pokemon.name}</span><div class="likes"><button type="button" class="like" value="${pokemon.name}"></button><span id="${pokemon.name}">likes</span></div></div>
       <button class="comments" value="${pokemon.name}">Comments</button>
       </div>`;
