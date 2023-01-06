@@ -67,7 +67,7 @@ Also two tests were created to verify the operation of the function that display
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link pending...]()
+- [Live Demo Link](https://sambeck87.github.io/group-capstone-project/)
 - [Description video](https://drive.google.com/file/d/1ITx9sOrwqMaxeFMMvToJBXfK-PMGkRia/view?usp=share_link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
