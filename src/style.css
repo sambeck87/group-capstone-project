@@ -155,8 +155,8 @@ footer p {
   overflow-y: scroll;
   box-shadow: 10px 10px 10px #444;
   z-index: 2;
-  background-image: url('./img/popup.jpg');
-  background-size: cover;
+  background: rgb(227,126,148);
+background: linear-gradient(rgba(227,126,148,1) 0%, rgba(251,251,251,1) 40%, rgba(255,255,255,1) 100%);
 }
 
 .popup-container::-webkit-scrollbar {
